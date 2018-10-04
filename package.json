@@ -1,0 +1,31 @@
+{
+  "name": "gc-package-name-here",
+  "version": "0.0.1",
+  "description": "Package description",
+  "main": "index.js",
+  "repository": "git@github.com:GoCater/gc-package-name-here.git",
+  "author": "GoCater <dev@gocater.co>",
+  "license": "GoCater",
+  "private": true,
+  "scripts": {
+    "dev": "./node_modules/nodemon/bin/nodemon.js index.js",
+    "lint": "./node_modules/eslint/bin/eslint.js ./src",
+    "build": "./node_modules/eslint/bin/eslint.js ./src && BABEL_ENV=node ./node_modules/@babel/cli/bin/babel.js ./src -d ./build/ -s",
+    "watch": "BABEL_ENV=node ./node_modules/@babel/cli/bin/babel.js ./src -d ./build/ -s --watch"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "babel-eslint": "8",
+    "eslint": "4.x",
+    "eslint-plugin-import": "^2.14.0",
+    "nodemon": "^1.18.4"
+  },
+  "dependencies": {
+    "dotenv": "^6.0.0"
+  }
+}
