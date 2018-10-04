@@ -8,6 +8,7 @@
   "license": "GoCater",
   "private": true,
   "scripts": {
+    "release": "./node_modules/eslint/bin/eslint.js ./src && BABEL_ENV=node ./node_modules/@babel/cli/bin/babel.js ./src -d ./release/ -s",
     "dev": "./node_modules/nodemon/bin/nodemon.js index.js",
     "lint": "./node_modules/eslint/bin/eslint.js ./src",
     "build": "./node_modules/eslint/bin/eslint.js ./src && BABEL_ENV=node ./node_modules/@babel/cli/bin/babel.js ./src -d ./build/ -s",
