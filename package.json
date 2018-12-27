@@ -24,7 +24,7 @@
     "@babel/preset-env": "^7.1.0",
     "babel-eslint": "8",
     "babel-jest": "^23.6.0",
-    "eslint": "4.x",
+    "eslint": "5.x",
     "eslint-plugin-import": "^2.14.0",
     "jest": "^23.2.0",
     "nodemon": "^1.18.4"
