@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Package description",
   "main": "index.js",
-  "repository": "git@github.com:GoCater/gc-package-name-here.git",
+  "repository": "git@github.com:ezcater/gc-package-name-here.git",
   "author": "GoCater <dev@gocater.co>",
   "license": "GoCater",
   "private": true,
